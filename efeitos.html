@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaisViagem</title>
+    <!-- CSS Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #ffffff;
+}
+
+
+.carrossel-principal{
+  margin-bottom: 50px;
+}
+
+.botao-nav{
+  border-radius: 10px;
+  border:2px solid #47B5FF;
+  color:#256D85;
+
+}
+.botao-nav:hover{
+  border-radius: 10px;
+  color:#256D85;
+  border:2px solid #DFF6FF;
+  
+
+}
+
+h5{
+  color:#256D85;
+  font-size: 30px;
+  background-color: rgba(204, 204, 204, 0.736);
+
+}
+.parte2{
+  margin-top: 90px;
+  margin-bottom: 500px;
+}
+
+.item-texto{
+  /* Pacotes para economizar */
+
+margin-top: 550px;
+position: absolute;
+width: 322px;
+height: 31px;
+left: 100px;
+top: 400px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 31px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* color 2 */
+
+color: #256D85;
+}
+
+/*card compras */
+div.gallery {
+  border: 1px solid #ccc;
+  border-radius: 0px 0px 10px 10px;
+  margin-bottom: 16%;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.botão-card{
+  margin-left: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: #777;
+  color: #DFF6FF;
+  background-color: #47B5FF;
+  border: 0;
+  padding: 2%;
+  font-size: 18px;
+}
+
+/*CARD DISNEY */
+.card text-bg-dark{
+  margin-top: 40%;
+}
+.card-title{
+  font-size: 43px;
+}
+.link-diney{
+  color:yellow;
+  text-decoration: none
+}
+.link-diney:hover{
+  color: #256D85;
+  font-size: 47px;
+}
+.lista-card{
+  font-size: 13px;
+
+}
+
+/*ANIMAÇÃO "MAIS VIAGEM TE LEVA*/
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  letter-spacing: 5px;
+  font-size:60px;
+  color: rgb(237, 236, 228);
+}
+
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  color:white;
+  margin-bottom: 5%;
+  height: 1%;
+  width: 20px 30px 20px 30px;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+</style>
+
+<script>
+  function openWin() {
+    window.open("cadastro.html","_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=400, height=400");
+  }
+
+  </script>
+</head>
+<html>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MAISVIAGEM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Pacotes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Hóteis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Promoções</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Disney</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="botao-nav" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!--ANIMAÇÃO "MAIS VIAGEM TE LEVA"-->
+  <section>
+    <div class="header">
+  
+      <div class="inner-header flex">
+      <img src="iconemulher.png" alt="icone" width="40%" height="90%">
+      <h1>Você sonha, o <strong>MAISVIAGEM</strong> te leva.</h1>
+      </div>
+      
+      <!--Waves Container-->
+      <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+      <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+      </svg>
+      </div>
+  </section>
+  <!--CARROSSEL DE IMAGENS-->
+
+  <!-- CARD DE IMAGENS-->
+  <section class="parte2">
+    <p class="item-texto">Pacotes para economizar</p>
+  
+<!-- CARD DE COMPRAS-->
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="maldivas2.jpeg" alt="Cinque Terre">
+    </a>
+    <div class="desc"> Pacote de Viagem -  <strong>Ilhas Maldivas </strong>- <br> 2024
+    </div>
+    <div>
+      <div>
+        <ul class="lista-card">
+          <li>Hospedagem</li>
+          <li>Café da manhã</li>
+          <li>Passagem Aérea</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <button class="botão-card">Quero ver</button>
+    </div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="noronha2.jpeg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Pacote de Viagem - <strong> Fernando de Noronha</strong> - 2024</div>
+    <div>
+      <div>
+        <ul class="lista-card">
+          <li>Hospedagem</li>
+          <li>Café da manhã</li>
+          <li>Passagem Aérea</li>
+        </ul>
+      </div>
+    </div>
+      <div>
+        <button class="botão-card">Quero ver</button>
+      </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="salvador2.jpeg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Pacote de Viagem -<strong> Salvador</strong>- <br> 2023  </div>
+    <div>
+      <div>
+        <ul class="lista-card">
+          <li>Hospedagem</li>
+          <li>Café da manhã</li>
+          <li>Passagem Aérea</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <button class="botão-card">Quero ver</button>
+    </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="roma2.jpeg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Pacote de Viagem -<strong> Roma </strong>- <br> 2024</div>
+    <div>
+      <ul class="lista-card">
+        <li>Hospedagem</li>
+        <li>Café da manhã</li>
+        <li>Passagem Aérea</li>
+      </ul>
+    </div>
+    <div>
+      <button class="botão-card">Quero ver</button>
+    </div>
+  </div>
+</div>
+
+<!--CARD DISNEY-->
+<section class="disney">
+<div class="card text-bg-dark">
+  <img src="https://cdn1.parksmedia.wdprapps.disney.com/media/blog/wp-content/uploads/2015/01/phiphi833111.jpg" class="card-img" alt="..." height="380px">
+  <div class="card-img-overlay">
+    <h4 class="card-title">Você sonha, <br> o <a class="link-diney"href="##">MAISVIAGEM</a> <br> te leva.</h4>
+  </div>
+</div>
+<!-- Função de abrir janela com promoções -->
+<div>
+  <form>
+    <input type="button" value="Realizar cadastro" onclick="openWin()">
+  </form>
+</div>
+</section>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</html>
+
