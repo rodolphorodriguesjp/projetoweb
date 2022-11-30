@@ -197,9 +197,279 @@
 </form>
 </div>
 </section>
-<footer class="rodape">
-  <p>2022 MaisViagem - Direitos Reservados. Desenvolvido por Isabelle Lacerda e Rodolpho Rodrigues.</p>
-</footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaisViagem</title>
+    <!-- CSS Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="cadastro.js">
+
+<script>
+  function openWin() {
+    window.open("cadastro.html","_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=500, height=600");
+  }
+  function openWin1() {
+    window.open("pacote1.html");
+  }
+</script>
+</head>
+<html>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/logo_principal.jpeg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Pacotes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Hóteis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Promoções</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Disney</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="botao-nav" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!--ANIMAÇÃO "MAIS VIAGEM TE LEVA"-->
+  <section>
+    <div class="header">
+  
+      <div class="inner-header flex">
+      <img src="img/iconemulher.png" alt="icone" width="40%" height="90%">
+      <h1>Você sonha, o <strong>MAISVIAGEM</strong> te leva.</h1>
+      </div>
+      
+      <!--Waves Container-->
+      <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+      <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+      </svg>
+      </div>
+  </section>
+
+<!-- CARD DE COMPRAS-->
+<section>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="img/maldivas2.jpeg" alt="Cinque Terre">
+    </a>
+    <div class="desc"> Pacote de Viagem -  <strong>Ilhas Maldivas </strong>- <br> 2024
+    </div>
+    <div>
+      <div>
+        <ul class="lista-card">
+          <li>Hospedagem</li>
+          <li>Café da manhã</li>
+          <li>Passagem Aérea</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <button class="botão-card" onclick="openWin1()" href="pacote1.html">Quero ver</button>
+    </div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/img_forest.jpg">
+      <img src="img/noronha2.jpeg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Pacote de Viagem - <strong> Fernando de Noronha</strong> - 2024</div>
+    <div>
+      <div>
+        <ul class="lista-card">
+          <li>Hospedagem</li>
+          <li>Café da manhã</li>
+          <li>Passagem Aérea</li>
+        </ul>
+      </div>
+    </div>
+      <div>
+        <button class="botão-card">Quero ver</button>
+      </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/img_lights.jpg">
+      <img src="img/salvador2.jpeg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Pacote de Viagem -<strong> Salvador</strong>- <br> 2023  </div>
+    <div>
+      <div>
+        <ul class="lista-card">
+          <li>Hospedagem</li>
+          <li>Café da manhã</li>
+          <li>Passagem Aérea</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <button class="botão-card">Quero ver</button>
+    </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img/roma2.jpeg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Pacote de Viagem -<strong> Roma </strong>- <br> 2024</div>
+    <div>
+      <ul class="lista-card">
+        <li>Hospedagem</li>
+        <li>Café da manhã</li>
+        <li>Passagem Aérea</li>
+      </ul>
+    </div>
+    <div>
+      <button class="botão-card">Quero ver</button>
+    </div>
+  </div>
+</div>
+</section>
+<!--CARD DISNEY-->
+<section class="disney">
+<div class="card text-bg-dark">
+  <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2021/10/orlando-eua-disney-capa9.jpg" class="card-img" alt="..." height="380px">
+  <div class="card-img-overlay">
+    <h4 class="card-title">Pacotes de viagem <br> para a
+ <a class="link-diney"href="##">Disney</a></h4>
+ <p>Descubra a magia da Disney por um precinho MAISVIAGEM.</p>
+  </div>
+</div>
+</section>
+<!--Black Friday-->
+<section class="black-friday">
+<h2 class="texto-blackfriday">Ofertas sem juros para quebrar a rotina! </h2>
+<p class="texto-blackfriday"> Quer receber nossas promoções e novidades?</p>
+<form>
+  <input class="botão-cadastro" type="button" value="Cadastre-se e não perca nada!" onclick="openWin()">
+</form>
+</div>
+</section>
+<!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+  
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Conheça
+            </h6>
+            <p>
+              Somos uma empresa de tecnologia e inovação que hoje é a maior plataforma de viagens online do Brasil!
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Viaje
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Hóteis</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Pacotes</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Promoções</a>
+            </p>
+            <p>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Fale conosco
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Central de ajuda</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Política de privacidade</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Termos de uso</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+            <p><i class="fas fa-home me-3"></i> João Pessoa, Paraíba</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              maisviagem@info.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i>0800 9067 5573</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright:
+      <p class="text-reset fw-bold">MAISVIAGEM</p>
+    </div>
+  </footer>
 </body>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
