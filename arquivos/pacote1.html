@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaisViagem</title>
+    <!-- CSS Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="pacote1.css">
+<link rel="stylesheet" href="cadastro.js">
+
+<script>
+  function openWin() {
+    window.open("cadastro.html","_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=500, height=600");
+  }
+  function openWin1() {
+    window.open("pacote1.html");
+  }
+  function openWin2() {
+    window.open("pagamento.html","_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=700, height=700");
+  }
+</script>
+</head>
+<html>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/logo_principal.jpeg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Pacotes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Hóteis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Promoções</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Disney</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="botao-nav" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!--ANIMAÇÃO "MAIS VIAGEM TE LEVA"-->
+  <section>
+    <div class="header">
+  
+      <div class="inner-header flex">
+      <img src="img/iconemulher.png" alt="icone" width="40%" height="90%">
+      <h1>Você sonha, o <strong>MAISVIAGEM</strong> te leva.</h1>
+      </div>
+      
+      <!--Waves Container-->
+      <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+      <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+      </svg>
+      </div>
+  </section>
+
+<!-- CARD DE COMPRAS-->
+<h3><b>Pacote Recomendado</b></h3>
+<br>
+<section>
+  <main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Voo</h4>
+          </div>
+          <div class="card-body">
+            <img src="voomaldivas.jpeg" alt="Maldivas"width="400px" height="307px">
+            <h4>Voo: Recife - Maldivas</h4>
+            <h6>Detalhes do Voo</h6>
+
+            <div class="article2">
+              <p>Voos disponíveis partir de R$ 8.841,00</p>
+              <p>Ida: 07 de agosto de 2023</p> 
+              <p>Volta: 15 de agosto de 2023</p>
+              <p>Operadoras: Latam e Qatar Airlines</p>
+              <br>
+             </div>
+           <button type="button" class="btn btn-lg btn-outline-primary">Alterar Voo</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Hotel</h4>
+          </div>
+          <div class="card-body">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="hotelmaldivas.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="hotelmaldivas2.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="hotelmaldivas3.webp" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <h4>Riu Palace Maldives - All inclusive</h4>
+            <h6>Suíte Júnior</h6>
+            <br>
+            <div class="article">
+              <p>40 m²</p>
+              <p>Vista para o mar</p> 
+              <p>1 cama King OU 2 camas de casal</p>
+              <p>Acomoda 2 pessoas</p>
+              <br>
+             </div>
+             <div class="sidebar">
+              <p>Wi-Fi grátis</p>
+              <p>Café da manhã incluído</p>
+              <p>Tudo incluído</p>
+              <p>Frigobar no quarto</p>
+              <br>
+             </div>
+            <button type="button" class="btn btn-lg btn-outline-primary">Alterar Hotel</button>
+          </div>
+        </div>
+      </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Resumo</h4>
+              </div>
+              <div class="card-body">
+                <div class="article">
+                  <p>
+                  <p>Valor por viajante</p>
+                  <p>Taxas e impostos</p> 
+                  <p>Valor final 2 Viajantes</p>
+                </div>
+                <div class="sidebar">
+                  <p>
+                  <p><b>R$ 5.759,50</b></p>
+                  <p><b>R$ 1.036,71</b></p>
+                  <p><b>R$ 13.592,42</b></p>
+                </div>
+              </div> 
+              <div>
+                <button type="button" class="btn btn-lg btn-outline-primary" onclick="openWin2()">Pagamento</button>
+              </div><p>
+          </div>
+          </div>
+        </div>
+    </div>
+  </main>
+</section>  
+
+<section class="black-friday">
+<h2 class="texto-blackfriday">Ofertas sem juros para quebrar a rotina! </h2>
+<p class="texto-blackfriday"> Quer receber nossas promoções e novidades?</p>
+<form>
+  <input class="botão-cadastro" type="button" value="Cadastre-se e não perca nada!" onclick="openWin()">
+</form>
+</div>
+</section>
+<footer class="rodape">
+  <p>2022 MaisViagem - Direitos Reservados. Desenvolvido por Isabelle Lacerda e Rodolpho Rodrigues.</p>
+</footer>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</html>
