@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaisViagem</title>
+    <!-- CSS Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="pacote4.css">
+<link rel="stylesheet" href="cadastro.js">
+
+<script>
+  function openWin() {
+    window.open("cadastro.html","_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=500, height=600");
+  }
+  function openWin1() {
+    window.open("pagamento.html","_blank","toolbar=yes, location=yes, directories=no, status=no, menubar=yes, scrollbars=yes, resizable=no, copyhistory=yes, width=700, height=700");
+  }
+</script>
+</head>
+<html>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="principal.html"><img src="logo_principal.jpeg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Pacotes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Hóteis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Promoções</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Disney</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="botao-nav" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!--ANIMAÇÃO "MAIS VIAGEM TE LEVA"-->
+  <section>
+    <div class="header">
+  
+      <div class="inner-header flex">
+      <img src="iconemulher.webp" alt="icone" width="40%" height="90%">
+      <h1>Você sonha, o <strong>MAISVIAGEM</strong> te leva.</h1>
+      </div>
+      
+      <!--Waves Container-->
+      <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+      <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+      </svg>
+      </div>
+  </section>
+
+<!-- CARD DE COMPRAS-->
+<h3><b>Pacote Recomendado</b></h3>
+<br>
+<section>
+  <main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal"><img src="aviao.png" width="30px" height="30px"> Voo</h4>
+          </div>
+          <div class="card-body">
+            <img src="vooroma.jpg" alt="Roma" width="450px" height="307px">
+            <h4>Recife - Roma (Ida e Volta)</h4>
+            <h6>Detalhes do Voo</h6>
+            <div class="article2">
+              <p>Voos disponíveis partir de R$ 4.174,00</p>
+              <p><img src="departure.png" width="20px" height="20px">  Ida: 12 de outubro de 2023</p> 
+              <p><img src="arrival.png" width="20px" height="20px">  Volta: 22 de outubro de 2023</p>
+              <p>Operadoras: Latam Linhas Aéreas</p>
+              <br>
+             </div>
+           <button type="button" class="btn btn-lg btn-outline-primary">Alterar Voo</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal"><img src="cama.png" width="30px" height="30px">  Hotel</h4>
+          </div>
+            <div class="card-body">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="hotelroma.webp" height="307px">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="hotelroma2.webp" height="307px">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="hotelroma3.webp" height="307px">
+                  </div>
+                </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+                <h4>Wish Hotel da Bahia</h4>
+                <h6>Superior Double - R$ 664,00(diária)</h6>
+                <br>
+              <div>
+                <div class="article">
+                  <p><img src="metro.png" width="20px" height="20px"> 25 m²</p>
+                  <p><img src="praia.png" width="20px" height="20px"> Piscina</p> 
+                  <p><img src="cama.png" width="20px" height="20px"> 1 cama King</p>
+                  <p><img src="duaspessoas.png" width="20px" height="20px"> Acomoda 2 pessoas</p>
+                  <br>
+                </div>
+                <div class="sidebar">
+                  <p><img src="wifi.jpeg" width="20px" height="20px"> Wi-Fi grátis</p>
+                  <p><img src="cafe.png" width="20px" height="20px"> Café da manhã incluído</p>
+                  <p><img src="infinito.png" width="20px" height="20px"> Tudo incluído</p>
+                  <p><img src="frigobar.png" width="20px" height="20px"> Frigobar no quarto</p>
+                  <br>
+                </div>
+              </div>  
+              <button type="button" class="btn btn-lg btn-outline-primary">Alterar Hotel</button>
+          </div>
+        </div>
+      </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal"><img src="calculadora.png" width="30px" height="30px"> Resumo</h4>
+              </div>
+              <div class="card-body">
+                <div class="article">
+                  <p>
+                  <p>Valor por viajante</p>
+                  <p>Taxas e impostos</p> 
+                  <p>Valor final 2 Viajantes</p>
+                </div>
+                <div class="sidebar">
+                  <p>
+                  <p><b>R$ 8.039,50</b></p>
+                  <p><b>R$ 1.447,11</b></p>
+                  <p><b>R$ 9.486,61</b></p>
+                </div>
+              </div> 
+              <div>
+                <button type="button" class="btn btn-lg btn-outline-primary" onclick="openWin1()">Pagamento</button>
+              </div><p>
+          </div>
+          </div>
+        </div>
+    </div>
+  </main>
+</section>  
+
+<section class="black-friday">
+<h2 class="texto-blackfriday">Ofertas sem juros para quebrar a rotina! </h2>
+<p class="texto-blackfriday"> Quer receber nossas promoções e novidades?</p>
+<form>
+  <input class="botão-cadastro" type="button" value="Cadastre-se e não perca nada!" onclick="openWin()">
+</form>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Conheça
+          </h6>
+          <p>
+            Somos uma empresa de tecnologia e inovação que hoje é a maior plataforma de viagens online do Brasil!
+          </p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Viaje
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Hóteis</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Pacotes</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Promoções</a>
+          </p>
+          <p>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Fale conosco
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Central de ajuda</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Política de privacidade</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Termos de uso</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+          <p><i class="fas fa-home me-3"></i> João Pessoa, Paraíba</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            maisviagem@info.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i>0800 9067 5573</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <p class="text-reset fw-bold">MAISVIAGEM</p>
+  </div>
+</footer>
+
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</html>
